@@ -120,3 +120,15 @@ da manipulação programada com JavaScript.*/
     background-color: var(--cor-clara);
 }
 
+.destaque {
+    height: 500px;
+    background-image: url(../imagens/fundo-destaque.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.destaque h2, .destaque p {
+    color: var(--cor-clara);
+    text-align: center;
+}
