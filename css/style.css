@@ -13,3 +13,13 @@
 
 html { font-size: 16px; }
 
+body {
+    color: var(--cor-texto);
+    font-family: 'not sans', sans-serif;
+    background-color: var(--cor-clara);
+}
+
+body, h1, h2, p, figure, .menu {
+    margin: 0;
+    padding: 0;
+}
