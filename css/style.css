@@ -1,4 +1,9 @@
-body {
-    background-color: lightblue;
+:root {
+    /* Variaveis para a paleta de cores do site */
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-intermediaria: #ececec;
 }
 
