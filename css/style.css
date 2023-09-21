@@ -123,6 +123,7 @@ da manipulação programada com JavaScript.*/
 .destaque {
     height: 500px;
     background-image: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-direction: column;
