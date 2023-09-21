@@ -133,4 +133,34 @@ da manipulação programada com JavaScript.*/
 .destaque h2, .destaque p {
     color: var(--cor-clara);
     text-align: center;
+
+    animation-name: animadestaque;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075);
 }
+
+.destaque h2 {
+    /* Função clamp(
+        tamanho mínimo,
+        tamanho ideal,
+        tamanho máximo
+    ) */
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+.destaque p {
+    font-size: clamp(1.2rem, 3vw, 3rem);
+}
+
+/* Regra deanimação */
+@keyframes animadestaque {
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
