@@ -271,7 +271,7 @@ footer {
     }
 
     .front-end img {
-        height: 200px;
+        height: 150px;
     }
 }
 
@@ -281,7 +281,7 @@ footer {
 - Definir o tamanho máximo da classe limitador para 1000px; */
 
 @media screen and (min-width: 900px) {
-    p {
+    html {
         font-size: 18px;
     }
 
