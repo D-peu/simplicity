@@ -259,7 +259,51 @@ footer {
     margin-bottom: 1rem;
 }
 
+table {
+    width: 80%;
+    margin: auto;
+}
 
+table, th, td {
+    border: solid 1px;
+
+    /* Remove o espaço entre bordas */
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.5;
+}
+
+th {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border-color: var(--cor-escura);
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.18rem;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+th:last-child, td:last-child {
+    text-align: right;
+}
+
+th:first-child {
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--cor-clara);
+}
 
 
 
