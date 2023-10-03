@@ -61,6 +61,10 @@ header {
     
     position: sticky;
     top: 0;
+
+    /* z-index:  representa a profundidade do elemento e um elemento com valor alto fica a frente dos demais */
+    z-index: 1000;
+
     background-color: var(--cor-clara);
 }
 
@@ -315,18 +319,27 @@ td:last-child::before {
     position: relative;
  }
 
-.conteudo h2::before { 
-    content: "";
+.produtos h2::before { 
+    content: "🛒 ";
+}
+
+.galeria {
+    text-align: center;
 }
 
 .galeria img {
     clip-path: circle(50% at 50% 50%);
+    transform: scale(0.9);
+    transition: 0.5s;
+    filter: blur(1px);
 }
 
-.galeria img:hover, .galeria img:focus {
+.galeria a:hover img, .galeria a:focus img {
     clip-path: circle(140.9% at 0 0);
     border-radius: 1rem;
     transition: 0.5s;
+    transform: scale(1);
+    filter: blur(0);
 }
 
 /* Exercícios: regras condicionais (Media Queries) */
