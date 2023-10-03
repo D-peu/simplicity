@@ -306,6 +306,18 @@ tr:nth-child(odd) {
 }
 
 
+/* Pseudo-elemnto ::before */
+td:last-child::before {
+    content: "R$ ";
+ }
+
+ td:last-child {
+    position: relative;
+ }
+
+.conteudo h2::before { 
+    content: "x ";
+}
 
 /* Exercícios: regras condicionais (Media Queries) */
 
