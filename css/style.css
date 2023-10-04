@@ -320,9 +320,17 @@ td:last-child::before {
  }
 
 .produtos h2::before { 
-    content: "🛒 ";
+    content: "❗ ";
 }
 
+.servicos h2::before {
+    content: "🛠 ";
+}
+
+.conteudo h2::before {
+    content: "💌 ";
+}
+ 
 .galeria {
     text-align: center;
 }
