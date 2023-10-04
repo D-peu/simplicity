@@ -350,6 +350,32 @@ td:last-child::before {
     filter: blur(0);
 }
 
+
+/* Regras para o formulário */
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: yellow;
+}
+
+input, select, textarea {
+    border: none;
+    padding: 4px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+textarea {
+    height: auto;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
 /* Exercícios: regras condicionais (Media Queries) */
 
 /* 1) Crie uma regra condicional para telas a partir de 570px com as seguintes alterações: 
