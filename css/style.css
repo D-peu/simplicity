@@ -389,6 +389,24 @@ form div *:not(label) {
     width: 70%;
 }
 
+button {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border: none;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+button:hover, button:focus {
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    box-shadow: var(--cor-escura) 0 0 2px;
+    transition: 0.3s;
+}
+
 /* Exercícios: regras condicionais (Media Queries) */
 
 /* 1) Crie uma regra condicional para telas a partir de 570px com as seguintes alterações: 
