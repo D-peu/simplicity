@@ -116,7 +116,7 @@ elemento HTML (no caso, na lista de menu/links).
 
 Obs.: esta combinação será possível por meio 
 da manipulação programada com JavaScript.*/
-.menu.aberto {
+.menu-aberto {
     
     /* O Flex fará a lista de links aparecer */
     display: flex;
