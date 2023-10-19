@@ -13,5 +13,11 @@ botaomenu.addEventListener("click", function(event){
 
     /* Anular/Prevenir o comportamento padrão do link */
     event.preventDefault();
-    menu.classList.toggle("menu-aberto")
+    menu.classList.toggle("menu-aberto");
+
+    if (menu.classList.contains("menu-aberto")) {
+        textobotao.innerHTML = "fechar &times;";
+    } else {
+        textobotao.innerHTML ="Menu &equiv;";
+    }
 });

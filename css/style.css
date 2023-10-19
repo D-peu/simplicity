@@ -407,6 +407,14 @@ button:hover, button:focus {
     transition: 0.3s;
 }
 
+#cep { width: 60%; }
+
+#buscar {
+    width: 39%;
+    padding: 12px;
+}
+
+
 /* Exercícios: regras condicionais (Media Queries) */
 
 /* 1) Crie uma regra condicional para telas a partir de 570px com as seguintes alterações: 
