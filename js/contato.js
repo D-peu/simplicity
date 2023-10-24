@@ -10,6 +10,14 @@ const campoEstado = formulario.querySelector("#estado");
 const botaoBuscar = formulario.querySelector("#buscar");
 const mensagem = formulario.querySelector("#status");
 
+// Seleção do campo telefone usando JS PURO
+// const campoTelefone = formulario.querySelector("#telefone");
+
+// Seleção do campo telefone usando jQuery
+const campoTelefone = $("#telefone");
+
+// Ativando a máscara para o telefone 
+$(campoTelefone).mask("(00) 0000-0000"); // Exemplo: (11) 2135-0300
 
 // Detectando o evento de CLICK no botão buscar
 botaoBuscar.addEventListener("click", async function(event){
