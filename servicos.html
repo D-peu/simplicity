@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Simplicity</title>
 
+    <!-- Importando o css da lightbox -->
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,10 +38,15 @@
 
 
             <figure class="galeria">
-                <a href="imagens/desenvolvimento-web.jpg"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
-                <a href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg" alt=""></a>
-                <a href="imagens/marketing-digital.jpg"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
-                <a href="imagens/consultoria-treinamento.jpg"><img src="imagens/consultoria-treinamento-mini.jpg" alt=""></a>
+
+                <a data-title="Desenvolvimneto de sites" data-lightbox="fotos" href="imagens/desenvolvimento-web.jpg"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
+
+                <a data-title="Design gráfico impactante" data-lightbox="fotos" href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg" alt=""></a>
+
+                <a data-title="Venda e convença" data-lightbox="fotos" href="imagens/marketing-digital.jpg"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
+
+                <a data-title="Prepare-se para o mercado" data-lightbox="fotos" href="imagens/consultoria-treinamento.jpg"><img src="imagens/consultoria-treinamento-mini.jpg" alt=""></a>
+
             </figure> 
 
 
@@ -53,6 +61,18 @@
         <p>Simplicity é um site fictício desenvolvido para fins educacionais &copy; <b>Senac Penha</b>
             - <time>2023</time> </p>
     </footer>
+
+    <!-- Importação da biblioteca jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Importação do JS do plugin/extensão do lightbox -->
+    <script src="lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        lightbox.option({
+            albumLabel: "Foto %1 de %2"
+        });
+    </script>
 
     <script src="js/menu.js"></script>
 
