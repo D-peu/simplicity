@@ -67,3 +67,43 @@ botaoBuscar.addEventListener("click", async function(event){
     campoEstado.value = dados.uf;
     
 });
+
+
+
+
+
+
+
+
+
+
+/* Programação dp Formspree */
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: formulario.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.innerHTML = "Obrigado por sua contribuição!";
+      formulario.reset()
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+        } else {
+          status.innerHTML = "Deu ruim! Infelizmente deu alguma problema, tente novamente mais tarde"
+        }
+      })
+    }
+  }).catch(error => {
+    status.innerHTML = "Deu ruim! Infelizmente deu alguma problema, tente novamente mais tarde"
+  });
+}
+formulario.addEventListener("submit", handleSubmit)
