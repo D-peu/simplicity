@@ -357,6 +357,10 @@ form {
     margin: auto;
 }
 
+.mostrar {
+    display: none;
+}
+
 input, select, textarea {
     border: none;
     padding: 4px;
